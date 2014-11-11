@@ -1,0 +1,13 @@
+D:\Documents\EC\CSharp\GitHub2\ChessProject2\ChessProject2\ChessProject2\bin\Debug\ChessProject2.exe.config
+C:\Users\Jonas\Documents\UppgifterWIN14\ChessGitTakeTwo\ChessGitTakeTwo\ChessProject2\ChessProject2\bin\Debug\ChessProject2.exe.config
+C:\Users\Jonas\Documents\UppgifterWIN14\ChessGitTakeTwo\ChessGitTakeTwo\ChessProject2\ChessProject2\obj\Debug\ChessProject2.csprojResolveAssemblyReference.cache
+C:\Users\Jonas\Documents\UppgifterWIN14\ChessGitTakeTwo\ChessGitTakeTwo\ChessProject2\ChessProject2\bin\Debug\ChessProject2.exe
+C:\Users\Jonas\Documents\UppgifterWIN14\ChessGitTakeTwo\ChessGitTakeTwo\ChessProject2\ChessProject2\bin\Debug\ChessProject2.pdb
+C:\Users\Jonas\Documents\UppgifterWIN14\ChessGitTakeTwo\ChessGitTakeTwo\ChessProject2\ChessProject2\obj\Debug\ChessProject2.exe
+C:\Users\Jonas\Documents\UppgifterWIN14\ChessGitTakeTwo\ChessGitTakeTwo\ChessProject2\ChessProject2\obj\Debug\ChessProject2.pdb
+C:\Users\Jonas\Documents\UppgifterWIN14\ChessGitTakeTwo\ChessGitTakeTwo\ChessProjectGlorious\ChessProject2\bin\Debug\ChessProject2.exe.config
+C:\Users\Jonas\Documents\UppgifterWIN14\ChessGitTakeTwo\ChessGitTakeTwo\ChessProjectGlorious\ChessProject2\obj\Debug\ChessProject2.exe
+C:\Users\Jonas\Documents\UppgifterWIN14\ChessGitTakeTwo\ChessGitTakeTwo\ChessProjectGlorious\ChessProject2\obj\Debug\ChessProject2.pdb
+C:\Users\Jonas\Documents\UppgifterWIN14\ChessGitTakeTwo\ChessGitTakeTwo\ChessProjectGlorious\ChessProject2\obj\Debug\ChessProject2.csprojResolveAssemblyReference.cache
+C:\Users\Jonas\Documents\UppgifterWIN14\ChessGitTakeTwo\ChessGitTakeTwo\ChessProjectGlorious\ChessProject2\bin\Debug\ChessProject2.exe
+C:\Users\Jonas\Documents\UppgifterWIN14\ChessGitTakeTwo\ChessGitTakeTwo\ChessProjectGlorious\ChessProject2\bin\Debug\ChessProject2.pdb
