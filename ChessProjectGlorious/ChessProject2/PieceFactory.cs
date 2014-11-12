@@ -22,10 +22,12 @@ namespace ChessProject2
     {
         public Pawn(string colour,string type, int x, int y)
         {
+
             Color = colour;
             Type = type;
             PositionX = x;
             PositionY = y;
+
         }
     }
 

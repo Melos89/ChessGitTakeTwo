@@ -26,7 +26,7 @@ namespace ChessProject2
             else if (Piece[number].Color == "B")
             {
 
-                if(Piece[number].PositionY < 8)
+                if(Piece[number].PositionY < 7)
                 {
                 Piece[number].PositionY++;
                 }

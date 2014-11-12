@@ -31,6 +31,8 @@ namespace ChessProject2
             Pawn bp8 = new Pawn("B", "P",7,1);
 
 
+
+
             List<PieceFactory> WhitePieces = new List<PieceFactory>();//Creates a list for white folk and
             List<PieceFactory> BlackPieces = new List<PieceFactory>();//for the other mongrels
             
@@ -53,6 +55,7 @@ namespace ChessProject2
             BlackPieces.Add(bp6);
             BlackPieces.Add(bp7);
             BlackPieces.Add(bp8);
+            
 
 
             lists.White = WhitePieces;
