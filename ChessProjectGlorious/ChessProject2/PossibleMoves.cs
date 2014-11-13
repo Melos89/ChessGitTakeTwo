@@ -11,15 +11,6 @@ namespace ChessProject2
         public List<int> pawn = new List<int>();
         public PossibleMoves()
         {
-            int y = 0;
-            int x = 0;
-            y = 1;
-            x = 0;
-            y = 2;
-            x = 0;
-            y = 3;
-            x = 0;
-
         }
         
     }

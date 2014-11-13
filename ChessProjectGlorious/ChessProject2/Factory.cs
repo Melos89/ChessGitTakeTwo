@@ -33,41 +33,39 @@ namespace ChessProject2
 
 
 
-            List<PieceFactory> WhitePieces = new List<PieceFactory>();//Creates a list for white folk and
-            List<PieceFactory> BlackPieces = new List<PieceFactory>();//for the other mongrels
+            List<PieceFactory> Pieces = new List<PieceFactory>();
+
             
 
 
 
-            WhitePieces.Add(wp1);//Adds all white pieces to a list.
-            WhitePieces.Add(wp2);
-            WhitePieces.Add(wp3);
-            WhitePieces.Add(wp4);
-            WhitePieces.Add(wp5);
-            WhitePieces.Add(wp6);
-            WhitePieces.Add(wp7);
-            WhitePieces.Add(wp8);
-            BlackPieces.Add(bp1);//Adds all black pieces to a list.
-            BlackPieces.Add(bp2);
-            BlackPieces.Add(bp3);
-            BlackPieces.Add(bp4);
-            BlackPieces.Add(bp5);
-            BlackPieces.Add(bp6);
-            BlackPieces.Add(bp7);
-            BlackPieces.Add(bp8);
+            Pieces.Add(wp1);//Adds all white pieces to a list.
+            Pieces.Add(wp2);
+            Pieces.Add(wp3);
+            Pieces.Add(wp4);
+            Pieces.Add(wp5);
+            Pieces.Add(wp6);
+            Pieces.Add(wp7);
+            Pieces.Add(wp8);
+            Pieces.Add(bp1);//Adds all black pieces to a list.
+            Pieces.Add(bp2);
+            Pieces.Add(bp3);
+            Pieces.Add(bp4);
+            Pieces.Add(bp5);
+            Pieces.Add(bp6);
+            Pieces.Add(bp7);
+            Pieces.Add(bp8);
             
 
-
-            lists.White = WhitePieces;
-            lists.Black = BlackPieces;
             while (true)
             {
-                db.DrawTheBoard(WhitePieces, BlackPieces);
-                ml.MoveThisPiece(WhitePieces);
+                db.DrawTheBoard(Pieces);
+                ml.MoveThisPiece(Pieces);
+                ml.CheckLists(Pieces);
                 Console.ReadKey();
                 Console.Clear();
-                db.DrawTheBoard(WhitePieces, BlackPieces);
-                ml.MoveThisPiece(BlackPieces);
+                db.DrawTheBoard(Pieces);
+                ml.MoveThisPiece(Pieces);
                 Console.ReadKey();
                 Console.Clear();
             }

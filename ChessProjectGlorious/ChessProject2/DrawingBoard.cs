@@ -12,9 +12,9 @@ namespace ChessProject2
         public DrawingBoard()
         {
         }
-        public void DrawTheBoard(List<PieceFactory> white,List<PieceFactory> black)
+        public void DrawTheBoard(List<PieceFactory> pieces)
         {
-            string[,] chessboard = PopulateTheBoard(white,black);
+            string[,] chessboard = PopulateTheBoard(pieces);
             for (int y = 0; y <= 7; y++)
             {
                 for (int x = 0; x <= 7; x++)
@@ -31,14 +31,10 @@ namespace ChessProject2
                 Console.WriteLine("");
             }
         }
-        public string[,] PopulateTheBoard(List<PieceFactory> white, List<PieceFactory> black)
+        public string[,] PopulateTheBoard(List<PieceFactory> items)
         {
             string[,] chessboard = new string[8, 8];
-            foreach (var piece in white)
-            {
-                chessboard[piece.PositionX, piece.PositionY] = piece.Color + piece.Type;
-            }
-            foreach (var piece in black)
+            foreach (var piece in items)
             {
                 chessboard[piece.PositionX, piece.PositionY] = piece.Color + piece.Type;
             }

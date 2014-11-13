@@ -14,12 +14,14 @@ namespace ChessProject2
 
         public int PositionY { get; set; }
         public string Type { get; set; }
+        public List<List<Positions>> ShowMeMoves { get; set; }
 
         
     }
 
     public class Pawn : PieceFactory
     {
+        
         public Pawn(string colour,string type, int x, int y)
         {
 
@@ -27,6 +29,26 @@ namespace ChessProject2
             Type = type;
             PositionX = x;
             PositionY = y;
+            ShowMeMoves = new List<List<Positions>>() {
+
+
+            new List<Positions>
+            {
+                new Positions(0,1),
+                new Positions(1,1),
+                new Positions(-1,1),
+            },
+
+            new List<Positions>
+            {
+                new Positions(0,-1),
+                new Positions(1,-1),
+                new Positions(-1,-1),
+            },
+
+
+            
+            };
 
         }
     }

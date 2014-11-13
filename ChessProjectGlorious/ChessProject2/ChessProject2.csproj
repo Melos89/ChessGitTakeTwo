@@ -48,6 +48,8 @@
     <Compile Include="DrawingBoard.cs" />
     <Compile Include="Factory.cs" />
     <Compile Include="OurMain.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Positions.cs" />
     <Compile Include="PossibleMoves.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
