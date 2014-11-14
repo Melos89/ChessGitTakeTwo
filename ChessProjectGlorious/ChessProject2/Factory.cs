@@ -30,7 +30,7 @@ namespace ChessProject2
             Pawn bp7 = new Pawn("B", "P",6,1);
             Pawn bp8 = new Pawn("B", "P",7,1);
 
-
+           
 
 
             List<PieceFactory> Pieces = new List<PieceFactory>();
@@ -55,17 +55,21 @@ namespace ChessProject2
             Pieces.Add(bp6);
             Pieces.Add(bp7);
             Pieces.Add(bp8);
-            
 
+            PlayerOne B1ll = new PlayerOne(Pieces);
+            PlayerTwo Su2an = new PlayerTwo(Pieces);
+
+            List<PieceFactory> AllPieces = B1ll.MyPieces.Concat(Su2an.MyPieces).ToList();
             while (true)
             {
-                db.DrawTheBoard(Pieces);
-                ml.MoveThisPiece(Pieces);
-                ml.CheckLists(Pieces);
+                db.DrawTheBoard(AllPieces);
+                B1ll.MyPieces = ml.CheckLists(B1ll.MyPieces);
+                ml.MoveThisPiece(B1ll.MyPieces);
                 Console.ReadKey();
                 Console.Clear();
-                db.DrawTheBoard(Pieces);
-                ml.MoveThisPiece(Pieces);
+                db.DrawTheBoard(AllPieces);
+                Su2an.MyPieces = ml.CheckLists(Su2an.MyPieces);
+                ml.MoveThisPiece(Su2an.MyPieces);
                 Console.ReadKey();
                 Console.Clear();
             }
