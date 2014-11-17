@@ -8,28 +8,21 @@ namespace ChessProject2
 {
     public abstract class Player
     {
+        public Factory PieceCreator;
+        public CollectionOfLists lists = new CollectionOfLists();
+        public MoveLogic ml = new MoveLogic();
+        public DrawingBoard db = new DrawingBoard();
         public List<PieceFactory> MyPieces = new List<PieceFactory>();
-        public void CheckEnemies(string[,] board)
-        {
-            foreach (var piece in MyPieces)
-            {
-                int x = piece.PositionX;
-                int y = piece.PositionY;
-                if (board[x + 1, y - 1] == "B")
-                {
 
-                }
-                //board[x,y]
-            }
-        }
 
 
     }
     public class PlayerOne : Player
     {
-        public PlayerOne(List<PieceFactory> pieces)
+        public PlayerOne(Factory WorkPlace)
         {
-            foreach (var piece in pieces)
+            PieceCreator = WorkPlace;
+            foreach (var piece in PieceCreator.Pieces)
             {
                 if (piece.Color == "W")
                 {
@@ -40,9 +33,10 @@ namespace ChessProject2
     }
     public class PlayerTwo : Player
     {
-        public PlayerTwo(List<PieceFactory> pieces)
+        public PlayerTwo(Factory WorkPlace)
         {
-            foreach (var piece in pieces)
+            PieceCreator = WorkPlace;
+            foreach (var piece in PieceCreator.Pieces)
             {
                 if (piece.Color == "B")
                 {

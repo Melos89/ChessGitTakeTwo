@@ -33,6 +33,7 @@ namespace ChessProject2
         }
         public string[,] PopulateTheBoard(List<PieceFactory> items)
         {
+            //CollectionOfLists lists;
             string[,] chessboard = new string[8, 8];
             foreach (var piece in items)
             {

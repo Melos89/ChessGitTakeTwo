@@ -10,5 +10,7 @@ namespace ChessProject2
     {
         public List<PieceFactory> White { get; set; }
         public List<PieceFactory> Black { get; set; }
+
+        public string[,] Chessboard { get; set; }
     }
 }
