@@ -18,7 +18,7 @@ namespace ChessProject2
                 {
                 B1ll.db.PopulateTheBoard(go.Pieces);
                 B1ll.db.DrawTheBoard(go.Pieces);
-                B1ll.ml.MoveThisPiece(B1ll.ml.CheckIfPiecesCanMove(B1ll.PieceCreator.Pieces,B1ll.db.PopulateTheBoard(B1ll.PieceCreator.Pieces)));
+                B1ll.ml.MoveThisPiece(B1ll.ml.CheckIfPiecesCanMove(B1ll.MyPieces,B1ll.db.PopulateTheBoard(B1ll.PieceCreator.Pieces)));
                 //Check points value on board();
                 //Choose piece to move();
                 
@@ -26,7 +26,7 @@ namespace ChessProject2
                 Console.Clear();
                 Su2an.db.PopulateTheBoard(go.Pieces);
                 Su2an.db.DrawTheBoard(go.Pieces);
-                Su2an.ml.MoveThisPiece(Su2an.ml.CheckIfPiecesCanMove(Su2an.PieceCreator.Pieces,Su2an.db.PopulateTheBoard(Su2an.PieceCreator.Pieces)));
+                Su2an.ml.MoveThisPiece(Su2an.ml.CheckIfPiecesCanMove(Su2an.MyPieces,Su2an.db.PopulateTheBoard(Su2an.PieceCreator.Pieces)));
                 //Check points value on board();
                 //Choose piece to move();
                 

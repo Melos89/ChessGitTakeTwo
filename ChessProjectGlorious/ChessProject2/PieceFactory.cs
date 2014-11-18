@@ -37,10 +37,6 @@ namespace ChessProject2
                 new Positions(0,1),
                 new Positions(1,1),
                 new Positions(-1,1),
-            },
-
-            new List<Positions> 
-            {
                 new Positions(0,-1),
                 new Positions(1,-1),
                 new Positions(-1,-1),
@@ -49,10 +45,6 @@ namespace ChessProject2
 
             
             };
-
-        }
-        public Pawn(string a, int x)
-        {
 
         }
     }

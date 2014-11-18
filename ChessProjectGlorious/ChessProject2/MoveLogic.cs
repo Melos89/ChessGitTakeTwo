@@ -22,12 +22,21 @@ namespace ChessProject2
                         {
                             ThesePiecesCanMove.Add(piece);
                         }
+                        else if (chessboard[piece.PositionX + 1,piece.PositionY + 1] != null || chessboard[piece.PositionX - 1, piece.PositionY + 1] != null)
+                        {
+                            // Calls another method to add capture moves into another list, might have to seperate conditions.
+                        }
+
                         break;
 
                     case "W":
                         if (chessboard[piece.PositionX, piece.PositionY - 1] == null)
                         {
                             ThesePiecesCanMove.Add(piece);
+                        }
+                        else if (chessboard[piece.PositionX + 1,piece.PositionY - 1] != null || chessboard[piece.PositionX - 1, piece.PositionY - 1] != null)
+                        {
+                            // Calls another method to add capture moves into another list, might have to seperate conditions.
                         }
                         break;
                 }
@@ -39,7 +48,8 @@ namespace ChessProject2
         {
             Random rnd = new Random();
             int number = rnd.Next(Piece.Count);
-
+            if (Piece.Count != 0)
+            {
             if (Piece[number].Color == "W")
             {
 
@@ -59,8 +69,13 @@ namespace ChessProject2
                 }
 
             }
+            
 
         }
+
+        }
+
+      
        
     }
 }
