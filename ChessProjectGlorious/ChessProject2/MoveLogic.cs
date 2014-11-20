@@ -38,7 +38,7 @@ namespace ChessProject2
                         //{
                         //    // Calls another method to add capture moves into another list, might have to seperate conditions.
                         //}
-                        //break;
+                        break;
                 }
             }
             return ThesePiecesCanMove;
