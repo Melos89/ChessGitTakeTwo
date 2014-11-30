@@ -22,10 +22,7 @@ namespace ChessProject2
                         {
                             ThesePiecesCanMove.Add(piece);
                         }
-                        //else if (chessboard[piece.PositionX + 1,piece.PositionY + 1] != null || chessboard[piece.PositionX - 1, piece.PositionY + 1] != null)
-                        //{
-                        //    // Calls another method to add capture moves into another list, might have to seperate conditions.
-                        //}Out of range exception. Probably pawns trying to move out of the array left or right. Check conditions.
+
 
                         break;
 
@@ -34,10 +31,7 @@ namespace ChessProject2
                         {
                             ThesePiecesCanMove.Add(piece);
                         }
-                        //else if (chessboard[piece.PositionX + 1,piece.PositionY - 1] != null || chessboard[piece.PositionX - 1, piece.PositionY - 1] != null)
-                        //{
-                        //    // Calls another method to add capture moves into another list, might have to seperate conditions.
-                        //}
+
                         break;
                 }
             }

@@ -14,6 +14,8 @@ namespace ChessProject2
 
         public int PositionY { get; set; }
         public string Type { get; set; }
+
+        public bool inPlay = true;
         public List<List<Positions>> ShowMeMoves { get; set; }
 
         

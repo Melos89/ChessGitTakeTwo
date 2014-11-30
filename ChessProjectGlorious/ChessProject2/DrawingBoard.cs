@@ -12,7 +12,7 @@ namespace ChessProject2
         public DrawingBoard()
         {
         }
-        public void DrawTheBoard(List<PieceFactory> pieces)
+        public string[,] DrawTheBoard(List<PieceFactory> pieces)
         {
             string[,] chessboard = PopulateTheBoard(pieces);
             for (int y = 0; y <= 7; y++)
@@ -30,6 +30,7 @@ namespace ChessProject2
 			}
                 Console.WriteLine("");
             }
+            return chessboard;
         }
         public string[,] PopulateTheBoard(List<PieceFactory> items)
         {
