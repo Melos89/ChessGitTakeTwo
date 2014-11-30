@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChessProject2
 {
-   public class Positions
+   public class Positions //Ideas, (Currently not in use)
     {
         public int X {get;set;}
         public int Y { get; set; }

@@ -8,7 +8,14 @@ namespace ChessProject2
 {
     public class MoveLogic
     {
-
+        /// <summary>
+        /// Method that takes in a list of pieces along with the board in the shape of a 2d Array.
+        /// it currently checks the pawns coords values and if there is space infront of the pawns.
+        /// If there is they get put in a list called ThesePiecesCanMove, then this list is returned to the method caller.
+        /// </summary>
+        /// <param name="pieces"></param>
+        /// <param name="chessboard"></param>
+        /// <returns></returns>
         public List<PieceFactory> CheckIfPiecesCanMove(List<PieceFactory> pieces, string[,] chessboard)
         {
             List<PieceFactory> ThesePiecesCanMove = new List<PieceFactory>();
@@ -38,6 +45,10 @@ namespace ChessProject2
             return ThesePiecesCanMove;
         }
         //-----------------------------------------------------------------------------------------------------
+        /// <summary>
+        /// This method just simply moves the pawns one up or down, as long as the value is within given parameters and if the list given is more then 0.
+        /// </summary>
+        /// <param name="Piece"></param>
         public void MoveThisPiece(List<PieceFactory> Piece)
         {
             Random rnd = new Random();

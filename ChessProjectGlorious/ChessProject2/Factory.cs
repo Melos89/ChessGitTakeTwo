@@ -8,7 +8,7 @@ namespace ChessProject2
 {
     public class Factory
     {
-        public List<PieceFactory> Pieces = new List<PieceFactory>();
+        public List<PieceFactory> Pieces = new List<PieceFactory>(); //Creates a new list.
         public Factory()
         {
             Pawn wp1 = new Pawn("W", "P", 0, 6); //Creates Pawns
@@ -39,7 +39,7 @@ namespace ChessProject2
             Pieces.Add(wp6);
             Pieces.Add(wp7);
             Pieces.Add(wp8);
-            Pieces.Add(bp1);//Adds all black pieces to a list.
+            Pieces.Add(bp1);//Adds all black pieces to the list.
             Pieces.Add(bp2);
             Pieces.Add(bp3);
             Pieces.Add(bp4);

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChessProject2
 {
-    class PossibleMoves
+    class PossibleMoves //Ideas (Currently not in use)
     {
         public List<int> pawn = new List<int>();
         public PossibleMoves()

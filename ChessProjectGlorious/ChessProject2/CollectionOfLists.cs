@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChessProject2
 {
-    public class CollectionOfLists
+    public class CollectionOfLists //Ideas (Currently not in use)
     {
         public List<PieceFactory> White { get; set; }
         public List<PieceFactory> Black { get; set; }
